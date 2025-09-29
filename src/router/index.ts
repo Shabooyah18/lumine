@@ -13,7 +13,7 @@ const router = createRouter({
             if (el) {
                 const header = document.querySelector('header')
                 const headerHeight = header ? header.getBoundingClientRect().height : 0
-                const y = window.scrollY + el.getBoundingClientRect().top - headerHeight - 8
+                const y = window.scrollY + el.getBoundingClientRect().top - headerHeight;
 
                 return {
                     left: 0,

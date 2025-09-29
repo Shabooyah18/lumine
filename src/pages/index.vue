@@ -5,18 +5,21 @@ const serviceDialog = ref(false);
 </script>
 
 <template>
-  <section id="hero" class="text-center py-16 bg-gray-50">
-    <h1 class="text-4xl md:text-5xl font-extrabold text-brand mb-4">
-      The Brightness of Clean Living
-    </h1>
-    <p class="text-xl md:text-2xl text-gray-600 mb-6">
-      Starting with your trash bins.
-    </p>
-    <Button class="bg-brand submit-btn" @click="serviceDialog = true" label="Request A Service" />
-    <div class="mt-10 flex justify-center gap-8">
-      <img src="@/assets/before.jpeg" alt="Trash Bin" class="rounded-lg shadow-md w-64" />
-      <img src="@/assets/after.jpeg" alt="Trash Bin" class="rounded-lg shadow-md w-64" />
+  <section id="hero" class="relative text-center py-56 bg-gray-50">
+    <div class="absolute inset-0 flex">
+      <img src="@/assets/before.jpeg" alt="Before" class="w-1/2 h-full object-cover" />
+      <img src="@/assets/after.jpeg" alt="After" class="w-1/2 h-full object-cover" />
     </div>
+    <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 text-white px-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-brand mb-4 drop-shadow-lg">
+          The Brightness of Clean Living
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-200 mb-6 drop-shadow">
+          Starting with your trash bins.
+        </p>
+        <Button class="bg-brand submit-btn" @click="serviceDialog = true" label="Request A Service" />
+      </div>
   </section>
 
   <!-- How It Works -->
