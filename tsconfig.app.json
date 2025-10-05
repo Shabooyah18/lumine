@@ -6,7 +6,7 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "components.d.ts",
-    "typed-router.d.ts"
+    "src/typed-router.d.ts"
   ],
   "exclude": [
     "node_modules",
