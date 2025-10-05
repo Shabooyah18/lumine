@@ -1,11 +1,14 @@
-import BronConfig from 'tailwind-config'
-
-/** @type {import('tailwindcss').Config} */
 export default {
     content: [
         './index.html',
-        './src/**/*.{vue,js,ts,jsx,tsx}',
+        './src/**/*.{vue,js,ts,jsx,tsx}'
     ],
-    presets: [BronConfig],
+    theme: {
+        extend: {
+            colors: {
+                brand: '#009CFF',
+            }
+        }
+    },
     plugins: [],
 }
